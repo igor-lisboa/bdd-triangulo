@@ -1,15 +1,14 @@
 package triangulo;
 
-
 /*******************************************************************************
- * Classe que verifica se três valores informados formam um triângulo, ou seja,
- * se cada lado é menor que a soma dos outros dois lados. Em caso positivo,
- * informa se o triângulo é isósceles (dois lados iguais e um diferente),
- * escaleno (todos os lados diferentes) ou equilátero (todos os lados iguais).
+ * Classe que verifica se tres valores informados formam um triÃ¢ngulo, ou seja,
+ * se cada lado Ã© menor que a soma dos outros dois lados. Em caso positivo,
+ * informa se o triÃ¢ngulo Ã© isÃ³sceles (dois lados iguais e um diferente),
+ * escaleno (todos os lados diferentes) ou equilÃ¡tero (todos os lados iguais).
  *******************************************************************************/
 
 public class Triangulo {
-	
+
     public String verificaTriangulo(int a, int b, int c) {
         if (ehValido(a, b, c)) {
             return descobreQualTriangulo(a, b, c);
@@ -31,12 +30,12 @@ public class Triangulo {
         return (a + b > c && b + c > a && a + c > b);
     }
 
-    public boolean ehEquilatero(int a, int b, int c){
+    public boolean ehEquilatero(int a, int b, int c) {
         return (a == b && b == c);
     }
 
-    public boolean ehIsosceles(int a, int b, int c){
+    public boolean ehIsosceles(int a, int b, int c) {
         return (a == b || b == c || a == c);
-    }	
+    }
 
 }
