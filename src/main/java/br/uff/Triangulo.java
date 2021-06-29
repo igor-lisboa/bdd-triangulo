@@ -1,4 +1,4 @@
-package triangulo;
+package br.uff;
 
 /*******************************************************************************
  * Classe que verifica se tres valores informados formam um triângulo, ou seja,
