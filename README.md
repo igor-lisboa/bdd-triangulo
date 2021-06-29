@@ -11,4 +11,7 @@ Escreva cenários e casos de testes usando BDD para testar a classe Triangulo. E
 * QUando
     * Realiza ação
 * Então
-    * Faz a validaçãp
+    * Faz a validação
+
+# Como executar?
+* Para rodar o teste execute `mvn test`
