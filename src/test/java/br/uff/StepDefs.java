@@ -2,7 +2,6 @@ package br.uff;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import br.uff.Triangulo;
 import io.cucumber.java.pt.Dado;
 import io.cucumber.java.pt.Entao;
 import io.cucumber.java.pt.Quando;
@@ -19,14 +18,9 @@ public class StepDefs {
         this.num3 = int3;
     }
 
-    @Quando("Eu utilizo o metodo descobreQualTriangulo")
-    public void eu_utilizo_o_metodo_descobreQualTriangulo() {
-        this.retorno = this.trianguloClass.descobreQualTriangulo(this.num1, this.num2, this.num3);
-    }
-
-    @Quando("Eu utilizo o metodo verificaTriangulo")
-    public void eu_utilizo_o_metodo_verificaTriangulo() {
-        this.retorno = this.trianguloClass.verificaTriangulo(this.num1, this.num2, this.num3);
+    @Quando("Eu verifico o triangulo")
+    public void eu_verifico_o_triangulo() {
+        this.retorno = trianguloClass.verificaTriangulo(this.num1, this.num2, this.num3);
     }
 
     @Entao("Eu confirmo que eh equilatero lendo a mensagem {string}")
